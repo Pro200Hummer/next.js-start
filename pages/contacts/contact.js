@@ -1,6 +1,8 @@
+import {Heading} from "../../components/Heading";
+
 const Contact = () => {
     return <div>
-        <h1>Current contact</h1>
+        <Heading text={'Current contact'}/>
         <p>This is a user contact</p>
     </div>
 };

@@ -1,6 +1,8 @@
+import {Heading} from "../components/Heading";
+
 const Posts = () => {
     return <div>
-        <h1>Posts list:</h1>
+        <Heading text={'Posts list:'}/>
         <p>This is a users posts</p>
     </div>
 }
