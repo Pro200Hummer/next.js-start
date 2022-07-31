@@ -1,5 +1,6 @@
 import styles from '../styles/NavBar.module.scss'
-import Link from "next/link";
+import Link from "next/link"
+import Image from 'next/image'
 import {useRouter} from "next/router";
 
 const NAVIGATION = [
@@ -11,7 +12,7 @@ const NAVIGATION = [
 export const NavBar = () => {
     const {pathname} = useRouter()
     return <nav className={styles.nav}>
-        <div>Logo</div>
+        <Image src={'/vercel.svg'} height={40} width={150} layout={'fixed'} alt={'vercel-logo'}/>
         <div className={styles.links}>
             {NAVIGATION.map(({id, title, path}) => (
                 <Link key={id} href={path}>
