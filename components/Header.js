@@ -1,8 +1,8 @@
-import {Heading} from "./Heading";
+import {NavBar} from "./NavBar";
 
 export const Header = () => {
     return <header>
-        <Heading tag={'h1'} text={'Next.js start application'}/>
+        <NavBar/>
     </header>
 };
- 
+
